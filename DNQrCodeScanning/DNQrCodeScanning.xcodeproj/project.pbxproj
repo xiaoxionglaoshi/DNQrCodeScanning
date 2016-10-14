@@ -12,6 +12,12 @@
 		515F5F861DAE245300D1706E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515F5F841DAE245300D1706E /* Main.storyboard */; };
 		515F5F881DAE245300D1706E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515F5F871DAE245300D1706E /* Assets.xcassets */; };
 		515F5F8B1DAE245300D1706E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515F5F891DAE245300D1706E /* LaunchScreen.storyboard */; };
+		5170FCDF1DAF68AF0006836D /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170FCDE1DAF68AF0006836D /* MyQRViewController.swift */; };
+		5170FCE11DAF69490006836D /* ScanQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170FCE01DAF69490006836D /* ScanQRViewController.swift */; };
+		5170FCE51DAF83700006836D /* String+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170FCE41DAF83700006836D /* String+QRCode.swift */; };
+		5170FCE71DAF83C50006836D /* UIImage+QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170FCE61DAF83C50006836D /* UIImage+QRCode.swift */; };
+		517656F71DB069F10090B882 /* ReadQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517656F61DB069F10090B882 /* ReadQRViewController.swift */; };
+		517656F91DB06AEA0090B882 /* qrimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 517656F81DB06AEA0090B882 /* qrimage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		515F5F871DAE245300D1706E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		515F5F8A1DAE245300D1706E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		515F5F8C1DAE245300D1706E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5170FCDE1DAF68AF0006836D /* MyQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQRViewController.swift; sourceTree = "<group>"; };
+		5170FCE01DAF69490006836D /* ScanQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanQRViewController.swift; sourceTree = "<group>"; };
+		5170FCE41DAF83700006836D /* String+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+QRCode.swift"; sourceTree = "<group>"; };
+		5170FCE61DAF83C50006836D /* UIImage+QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+QRCode.swift"; sourceTree = "<group>"; };
+		517656F61DB069F10090B882 /* ReadQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadQRViewController.swift; sourceTree = "<group>"; };
+		517656F81DB06AEA0090B882 /* qrimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qrimage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +66,14 @@
 		515F5F7F1DAE245300D1706E /* DNQrCodeScanning */ = {
 			isa = PBXGroup;
 			children = (
+				517656F81DB06AEA0090B882 /* qrimage.png */,
 				515F5F801DAE245300D1706E /* AppDelegate.swift */,
 				515F5F821DAE245300D1706E /* ViewController.swift */,
+				5170FCDE1DAF68AF0006836D /* MyQRViewController.swift */,
+				5170FCE01DAF69490006836D /* ScanQRViewController.swift */,
+				517656F61DB069F10090B882 /* ReadQRViewController.swift */,
+				5170FCE41DAF83700006836D /* String+QRCode.swift */,
+				5170FCE61DAF83C50006836D /* UIImage+QRCode.swift */,
 				515F5F841DAE245300D1706E /* Main.storyboard */,
 				515F5F871DAE245300D1706E /* Assets.xcassets */,
 				515F5F891DAE245300D1706E /* LaunchScreen.storyboard */,
@@ -124,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517656F91DB06AEA0090B882 /* qrimage.png in Resources */,
 				515F5F8B1DAE245300D1706E /* LaunchScreen.storyboard in Resources */,
 				515F5F881DAE245300D1706E /* Assets.xcassets in Resources */,
 				515F5F861DAE245300D1706E /* Main.storyboard in Resources */,
@@ -137,7 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5170FCE71DAF83C50006836D /* UIImage+QRCode.swift in Sources */,
+				5170FCE51DAF83700006836D /* String+QRCode.swift in Sources */,
+				5170FCE11DAF69490006836D /* ScanQRViewController.swift in Sources */,
 				515F5F831DAE245300D1706E /* ViewController.swift in Sources */,
+				517656F71DB069F10090B882 /* ReadQRViewController.swift in Sources */,
+				5170FCDF1DAF68AF0006836D /* MyQRViewController.swift in Sources */,
 				515F5F811DAE245300D1706E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +326,7 @@
 				515F5F911DAE245300D1706E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
