@@ -13,12 +13,12 @@ class ReadQRViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-let image = UIImage(named: "qrimage")
-DispatchQueue.global().async {
-    let recognizeResult = image?.recognizeQRCode()
-    let result = (recognizeResult?.characters.count)! > 0 ? recognizeResult : "无法识别"
-    print(result)
-}
+        let image = UIImage(named: "qrimage")
+        DispatchQueue.global().async {
+            let recognizeResult = image?.recognizeQRCode()
+            let result = (recognizeResult?.characters.count)! > 0 ? recognizeResult : "无法识别"
+            print(result)
+        }
     }
 
     override func didReceiveMemoryWarning() {
