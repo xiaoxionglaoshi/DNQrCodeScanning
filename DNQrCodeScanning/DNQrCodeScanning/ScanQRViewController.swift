@@ -37,6 +37,11 @@ class ScanQRViewController: UIViewController {
         // 获取摄像设备
         let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         
+        guard device != nil else {
+            let alertView = UIAlertView(title: "提示", message: "没有发现可用摄像设备", delegate: self, cancelButtonTitle: "确定")
+            alertView.show()
+            return
+        }
         // 初始化链接对象
         session = AVCaptureSession()
         let input: AVCaptureDeviceInput?
